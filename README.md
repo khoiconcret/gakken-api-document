@@ -61,7 +61,7 @@
         "created_at": "2025-09-15T09:23:59.000000Z",
         "id": 9943
     },
-    "isLocked": false
+    "is_locked": false
 }
 ```
 
