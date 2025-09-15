@@ -1,1 +1,1 @@
-# gakken-api-document
+# GAKKEN API DOCUMENT
