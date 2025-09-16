@@ -135,3 +135,36 @@
 **categories**: Danh sách category của slide.
 
 **latest_step**: Step cuối cùng cho tất cả những thay đổi
+
+
+### 3. Update slide content
+
+**URI:** `/gmeds/slide-history/update-content`  
+**Method:** `POST`
+
+---
+
+### Request Parameters
+
+| Name              | Type        | Required | Description                                 |
+|-------------------|-------------|----------|---------------------------------------------|
+| `clip_id`         | int/string  | Yes      | ID của slide clip                           |
+| `slide_id`        | int/string  | Yes      | ID của slide                                |
+| `master_layout_id`| int/string  | Yes      | ID của master layout                        |
+| `slide_content`   | object      | Yes      | Thông tin nội dung slide cần cập nhật        |
+| `slide_content.name`     | string      | Yes      | Key name của slide content                  |
+| `slide_content.contents` | string      | Yes      | Giá trị thay đổi                            |
+| `step`            | int         | Yes      | Bước hiện tại                               |
+
+**Response:**
+```json
+{
+    "success": true,
+    "current_step": 2,
+    "latest_step": 2
+}
+```
+
+**current_step**: Bước hiện tại sau khi cập nhật.
+
+**latest_step**: Bước lớn nhất hiện tại của slide.
