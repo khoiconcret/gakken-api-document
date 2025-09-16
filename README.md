@@ -167,4 +167,33 @@
 
 **current_step**: Bước hiện tại sau khi cập nhật.
 
+
+### 4. Change narration text
+
+**URI:** `/gmeds/slide-history/change/content-text-new`  
+**Method:** `POST`
+
+---
+
+#### Request Parameters
+
+| Name            | Type      | Required | Description                                   |
+|-----------------|-----------|----------|-----------------------------------------------|
+| `clip_id`       | string    | Yes      | ID của slide clip (exists:slide_clips,id)     |
+| `slide_id`      | string    | Yes      | ID của slide (exists:slides,id)               |
+| `narration_text`| string    | No       | Nội dung narration mới (nullable)             |
+| `current_step`  | numeric   | Yes      | Bước hiện tại                                 |
+
+**Response:**
+```json
+{
+    "success": true,
+    "current_step": 2,
+    "latest_step": 2
+}
+```
+
+**current_step**: Bước hiện tại sau khi cập nhật.
+
 **latest_step**: Bước lớn nhất hiện tại của slide.
+
