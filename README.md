@@ -13,6 +13,7 @@
 |------------------|--------|----------|------------------------|
 | `master_layout_id` | int/string | Yes      | ID của master layout   |
 | `slide_id`         | int/string | Yes      | ID của slide cần thay đổi |
+| `current_step`         | int| Yes      | Mục đích để xử lý khi undo và change master layout|
 
 **Response:**
 ```json
