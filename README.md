@@ -154,7 +154,7 @@
 | `slide_content`   | object      | Yes      | Thông tin nội dung slide cần cập nhật        |
 | `slide_content.name`     | string      | Yes      | Key name của slide content                  |
 | `slide_content.contents` | string      | Yes      | Giá trị thay đổi                            |
-| `step`            | int         | Yes      | Bước hiện tại                               |
+| `current_step`            | int         | Yes      | Bước hiện tại                               |
 
 **Response:**
 ```json
