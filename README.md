@@ -154,6 +154,7 @@
 | `slide_content`   | object      | Yes      | Thông tin nội dung slide cần cập nhật        |
 | `slide_content.name`     | string      | Yes      | Key name của slide content                  |
 | `slide_content.contents` | string      | Yes      | Giá trị thay đổi                            |
+| `slide_content.font_size` | number      | Yes      | Giá trị thay đổi                            |
 | `current_step`            | int         | Yes      | Bước hiện tại                               |
 
 **Response:**
